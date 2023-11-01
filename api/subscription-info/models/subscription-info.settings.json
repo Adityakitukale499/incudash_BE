@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "subscription_infos",
+  "info": {
+    "name": "subscriptionInfo"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "subscriptionInfo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subscription-info.subscription-info"
+    }
+  }
+}

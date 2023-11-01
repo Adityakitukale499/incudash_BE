@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_subscription_plan_subscription_plans",
+  "info": {
+    "name": "subscriptionPlan",
+    "icon": "arrow-alt-circle-left"
+  },
+  "options": {},
+  "attributes": {
+    "subscriptionType": {
+      "type": "string"
+    },
+    "interval": {
+      "type": "string"
+    },
+    "repetableFrequency": {
+      "type": "string"
+    },
+    "checklist": {
+      "type": "component",
+      "repeatable": true,
+      "component": "checklist.checklist"
+    },
+    "pricing": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "updated_at": {
+      "type": "string"
+    }
+  }
+}

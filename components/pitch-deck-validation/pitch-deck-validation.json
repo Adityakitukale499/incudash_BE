@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_pitch_deck_validation_pitch_deck_validations",
+  "info": {
+    "name": "pitchDeckValidation",
+    "icon": "align-center"
+  },
+  "options": {},
+  "attributes": {
+    "documentCollection": {
+      "type": "component",
+      "repeatable": true,
+      "component": "custom.document-collection"
+    },
+    "comments": {
+      "type": "component",
+      "repeatable": true,
+      "component": "comments.comments"
+    }
+  }
+}

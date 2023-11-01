@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "industry_types",
+  "info": {
+    "name": "industryType",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "industryType": {
+      "type": "component",
+      "repeatable": true,
+      "component": "industry-type.industry-type"
+    }
+  }
+}

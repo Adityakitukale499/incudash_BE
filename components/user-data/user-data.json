@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_user_data_user_data",
+  "info": {
+    "name": "user_data",
+    "icon": "angry"
+  },
+  "options": {},
+  "attributes": {
+    "email": {
+      "type": "string"
+    },
+    "isEmailVerified": {
+      "type": "boolean"
+    },
+    "phoneNumber": {
+      "type": "string"
+    },
+    "isBackOfficeUser": {
+      "type": "boolean"
+    },
+    "socialLinks": {
+      "type": "component",
+      "repeatable": false,
+      "component": "social-links.social-links"
+    },
+    "name": {
+      "type": "component",
+      "repeatable": false,
+      "component": "name.name"
+    }
+  }
+}

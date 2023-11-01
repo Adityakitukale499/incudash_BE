@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_custom_document_collections",
+  "info": {
+    "name": "documentCollection",
+    "icon": "american-sign-language-interpreting"
+  },
+  "options": {},
+  "attributes": {
+    "documentId": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "createdBy": {
+      "type": "string"
+    }
+  }
+}

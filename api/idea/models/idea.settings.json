@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ideas",
+  "info": {
+    "name": "idea",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "startupStage": {
+      "type": "component",
+      "repeatable": false,
+      "component": "startup-stage.startup-stage",
+      "required": true
+    },
+    "userId": {
+      "type": "string"
+    },
+    "step": {
+      "type": "string"
+    },
+    "validateIdea": {
+      "type": "component",
+      "repeatable": false,
+      "component": "validate-idea.validate-idea"
+    },
+    "productRoadmap": {
+      "type": "component",
+      "repeatable": false,
+      "component": "product-roadmap.product-roadmap"
+    },
+    "financialValuation": {
+      "type": "component",
+      "repeatable": false,
+      "component": "financial-valuation.financial-valuation"
+    },
+    "pitchDeckValidation": {
+      "type": "component",
+      "repeatable": false,
+      "component": "pitch-deck-validation.pitch-deck-validation"
+    },
+    "raiseFunding": {
+      "type": "component",
+      "repeatable": false,
+      "component": "raise-funding.raise-funding"
+    },
+    "stepNum": {
+      "type": "integer"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_comments_comments",
+  "info": {
+    "name": "comments",
+    "icon": "align-right"
+  },
+  "options": {},
+  "attributes": {
+    "created_at": {
+      "type": "string"
+    },
+    "commentText": {
+      "type": "text"
+    },
+    "createdBy": {
+      "type": "string"
+    }
+  }
+}

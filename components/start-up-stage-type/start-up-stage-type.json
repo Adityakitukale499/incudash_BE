@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_start_up_stage_type_start_up_stage_types",
+  "info": {
+    "name": "startUpStageType",
+    "icon": "apple-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "stageName": {
+      "type": "string"
+    },
+    "stageImage": {
+      "type": "string"
+    }
+  }
+}

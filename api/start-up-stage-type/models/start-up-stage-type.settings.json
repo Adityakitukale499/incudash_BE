@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "start_up_stage_types",
+  "info": {
+    "name": "startUpStageType",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "startUpStageType": {
+      "type": "component",
+      "repeatable": true,
+      "component": "start-up-stage-type.start-up-stage-type"
+    }
+  }
+}

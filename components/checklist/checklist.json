@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_checklist_checklists",
+  "info": {
+    "name": "checklist",
+    "icon": "arrow-alt-circle-up",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "subscriptionPlanItem": {
+      "type": "string"
+    }
+  }
+}

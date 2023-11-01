@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_custom_comments",
+  "info": {
+    "name": "comments",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "createAt": {
+      "type": "string"
+    },
+    "commentText": {
+      "type": "text"
+    },
+    "createdBy": {
+      "type": "string"
+    }
+  }
+}

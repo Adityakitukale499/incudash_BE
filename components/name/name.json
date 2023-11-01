@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_name_names",
+  "info": {
+    "name": "name",
+    "icon": "archive"
+  },
+  "options": {},
+  "attributes": {
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "updated_at": {
+      "type": "string"
+    }
+  }
+}

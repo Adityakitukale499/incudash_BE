@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_comments_validate_idea_comments",
+  "info": {
+    "name": "validateIdeaComments",
+    "icon": "air-freshener"
+  },
+  "options": {},
+  "attributes": {
+    "created_at": {
+      "type": "string"
+    },
+    "commentText": {
+      "type": "text"
+    },
+    "createdBy": {
+      "type": "string"
+    }
+  }
+}

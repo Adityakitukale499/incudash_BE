@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_social_links_social_links",
+  "info": {
+    "name": "socialLinks",
+    "icon": "angle-up"
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}

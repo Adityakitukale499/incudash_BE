@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "subscription_plans",
+  "info": {
+    "name": "subscriptionPlan",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "subscriptionPlan": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subscription-plan.subscription-plan"
+    }
+  }
+}

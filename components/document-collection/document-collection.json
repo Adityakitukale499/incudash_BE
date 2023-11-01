@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_document_collection_document_collections",
+  "info": {
+    "name": "documentCollection",
+    "icon": "anchor"
+  },
+  "options": {},
+  "attributes": {
+    "documentId": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string"
+    }
+  }
+}

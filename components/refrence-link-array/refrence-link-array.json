@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_refrence_link_array_refrence_link_arrays",
+  "info": {
+    "name": "refrenceLinkArray",
+    "icon": "ad",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "refrerenceLink": {
+      "type": "string"
+    }
+  }
+}

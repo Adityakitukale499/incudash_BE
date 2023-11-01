@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_validate_idea_validate_ideas",
+  "info": {
+    "name": "validateIdea",
+    "icon": "align-justify",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "ideaText": {
+      "type": "string"
+    },
+    "refrenceLinkArray": {
+      "type": "component",
+      "repeatable": true,
+      "component": "refrence-link-array.refrence-link-array"
+    },
+    "attachments": {
+      "type": "component",
+      "repeatable": true,
+      "component": "custom.attachments"
+    },
+    "comments": {
+      "type": "component",
+      "repeatable": true,
+      "component": "custom.comments"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "routes": [
+    {
+      "method": "POST",
+      "path": "/user/change-password",
+      "handler": "user.changePassword"
+    },
+    {
+      "method": "PUT",
+      "path": "/user/update/:id",
+      "handler": "user.update"
+    }
+  ]
+}

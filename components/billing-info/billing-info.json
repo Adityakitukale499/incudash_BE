@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_billing_info_billing_infos",
+  "info": {
+    "name": "billingInfo",
+    "icon": "asterisk"
+  },
+  "options": {},
+  "attributes": {
+    "price": {
+      "type": "string"
+    }
+  }
+}

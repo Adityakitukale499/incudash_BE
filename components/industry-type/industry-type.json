@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_industry_type_industry_types",
+  "info": {
+    "name": "industryType",
+    "icon": "chalkboard",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "industryName": {
+      "type": "string"
+    }
+  }
+}

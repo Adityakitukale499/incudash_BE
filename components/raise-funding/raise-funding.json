@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_raise_funding_raise_fundings",
+  "info": {
+    "name": "raiseFunding",
+    "icon": "allergies"
+  },
+  "options": {},
+  "attributes": {
+    "fundingFormattedText": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "updated_at": {
+      "type": "string"
+    },
+    "createdBy": {
+      "type": "string"
+    },
+    "lastUpdatedBy": {
+      "type": "string"
+    }
+  }
+}

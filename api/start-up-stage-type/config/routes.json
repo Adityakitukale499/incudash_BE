@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/start-up-stage-types",
+      "handler": "start-up-stage-type.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/start-up-stage-types/count",
+      "handler": "start-up-stage-type.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/start-up-stage-types/:id",
+      "handler": "start-up-stage-type.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/start-up-stage-types",
+      "handler": "start-up-stage-type.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/start-up-stage-types/:id",
+      "handler": "start-up-stage-type.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/start-up-stage-types/:id",
+      "handler": "start-up-stage-type.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

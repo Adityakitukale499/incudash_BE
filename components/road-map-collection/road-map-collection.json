@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_road_map_collection_road_map_collections",
+  "info": {
+    "name": "roadMapCollection",
+    "icon": "ambulance",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "timestampFrom": {
+      "type": "string"
+    },
+    "timestampTo": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "updated_at": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "roadmapTitle": {
+      "type": "string"
+    }
+  }
+}

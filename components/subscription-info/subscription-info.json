@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_subscription_info_subscription_infos",
+  "info": {
+    "name": "subscriptionInfo",
+    "icon": "arrow-circle-up"
+  },
+  "options": {},
+  "attributes": {
+    "userId": {
+      "type": "string"
+    },
+    "activeSubscriptionPlanId": {
+      "type": "string"
+    },
+    "subscriptionEndDate": {
+      "type": "string"
+    },
+    "billingInfo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "billing-info.billing-info"
+    },
+    "isActive": {
+      "type": "boolean"
+    }
+  }
+}
