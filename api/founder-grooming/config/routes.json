@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/founder-groomings",
+      "handler": "founder-grooming.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/founder-groomings/count",
+      "handler": "founder-grooming.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/founder-groomings/:id",
+      "handler": "founder-grooming.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/founder-groomings",
+      "handler": "founder-grooming.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/founder-groomings/:id",
+      "handler": "founder-grooming.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/founder-groomings/:id",
+      "handler": "founder-grooming.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

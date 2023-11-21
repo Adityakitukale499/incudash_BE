@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_mentor_booking_mentor_bookings",
+  "info": {
+    "name": "mentorBooking",
+    "icon": "arrow-up"
+  },
+  "options": {},
+  "attributes": {
+    "fouderId": {
+      "type": "string"
+    },
+    "dateOfBooking": {
+      "type": "string"
+    },
+    "isBookingCancelled": {
+      "type": "boolean"
+    },
+    "isBookingRescheduled": {
+      "type": "boolean"
+    },
+    "userId": {
+      "type": "string"
+    }
+  }
+}

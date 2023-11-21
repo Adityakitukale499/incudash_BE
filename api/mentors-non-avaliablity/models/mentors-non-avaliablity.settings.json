@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mentors_non_avaliablities",
+  "info": {
+    "name": "mentorsNonAvaliablity",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "mentorId": {
+      "type": "string"
+    },
+    "nonAvaliablityDates": {
+      "type": "component",
+      "repeatable": true,
+      "component": "non-avaliablity-dates.non-avaliablity-dates"
+    }
+  }
+}

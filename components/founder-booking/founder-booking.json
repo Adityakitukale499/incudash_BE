@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_founder_booking_founder_bookings",
+  "info": {
+    "name": "founderBooking",
+    "icon": "arrow-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "founderId": {
+      "type": "string"
+    },
+    "dateOfBooking": {
+      "type": "string"
+    },
+    "isBookingCancelled": {
+      "type": "boolean"
+    },
+    "isBookingRescheduled": {
+      "type": "boolean"
+    },
+    "userId": {
+      "type": "string"
+    }
+  }
+}

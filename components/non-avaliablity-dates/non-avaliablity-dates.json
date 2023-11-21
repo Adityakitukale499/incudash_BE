@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_non_avaliablity_dates_non_avaliablity_dates",
+  "info": {
+    "name": "nonAvaliablityDates",
+    "icon": "ban"
+  },
+  "options": {},
+  "attributes": {
+    "date": {
+      "type": "string"
+    }
+  }
+}

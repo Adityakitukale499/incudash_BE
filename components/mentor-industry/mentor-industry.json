@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_mentor_industry_mentor_industries",
+  "info": {
+    "name": "mentorIndustry",
+    "icon": "arrows-alt"
+  },
+  "options": {},
+  "attributes": {
+    "industryName": {
+      "type": "string"
+    },
+    "isActiveForAssignment": {
+      "type": "boolean"
+    },
+    "isDeactiavtedForBooking": {
+      "type": "boolean"
+    }
+  }
+}

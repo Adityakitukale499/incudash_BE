@@ -1,0 +1,68 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/founder-bookings",
+      "handler": "founder-booking.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/founder-bookings/count",
+      "handler": "founder-booking.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/founder-bookings/:id",
+      "handler": "founder-booking.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/founder-bookings",
+      "handler": "founder-booking.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/founder-bookings/:id",
+      "handler": "founder-booking.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/founder-bookings/:id",
+      "handler": "founder-booking.delete",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/founder-bookings/byUserIdAndFounderId/:userId",
+      "handler": "founder-booking.getEntriesByUserAndFounder",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/founder-bookings/countByUserAndFounder/:userId/:founderId",
+      "handler": "founder-booking.getCountByUserAndFounder",
+      "config": {
+        "policies": []
+      }
+    }    
+  ]
+}

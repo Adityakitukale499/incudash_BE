@@ -1,0 +1,60 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/founder-grooming-non-avaliablities",
+      "handler": "founder-grooming-non-avaliablity.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/founder-grooming-non-avaliablities/count",
+      "handler": "founder-grooming-non-avaliablity.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/founder-grooming-non-avaliablities/:id",
+      "handler": "founder-grooming-non-avaliablity.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/founder-grooming-non-avaliablities",
+      "handler": "founder-grooming-non-avaliablity.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/founder-grooming-non-avaliablities/:id",
+      "handler": "founder-grooming-non-avaliablity.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/founder-grooming-non-avaliablities/:id",
+      "handler": "founder-grooming-non-avaliablity.delete",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/founder-grooming-non-avaliablities/byFounderId/:founderId",
+      "handler": "founder-grooming-non-avaliablity.findByFounderId",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

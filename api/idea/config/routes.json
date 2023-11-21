@@ -24,14 +24,7 @@
         "policies": []
       }
     },
-    {
-      "method": "GET",
-      "path": "/ideas/:userId",
-      "handler": "idea.findOneByUserId",
-      "config": {
-        "policies": []
-      }
-    },
+
     {
       "method": "POST",
       "path": "/ideas",
@@ -55,6 +48,17 @@
       "config": {
         "policies": []
       }
+    },
+    {
+      "method": "GET",
+      "path": "/ideas/findByUserId/:userId",
+      "handler": "idea.findByUserId"
+    },
+    {
+      "method": "PUT",
+      "path": "/ideas/updateByUserId/:userId",
+      "handler": "idea.updateByUserId"
     }
+    
   ]
 }

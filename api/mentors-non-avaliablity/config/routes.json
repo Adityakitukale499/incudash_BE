@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/mentors-non-avaliablities",
+      "handler": "mentors-non-avaliablity.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mentors-non-avaliablities/count",
+      "handler": "mentors-non-avaliablity.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mentors-non-avaliablities/:id",
+      "handler": "mentors-non-avaliablity.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mentors-non-avaliablities",
+      "handler": "mentors-non-avaliablity.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/mentors-non-avaliablities/:id",
+      "handler": "mentors-non-avaliablity.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/mentors-non-avaliablities/:id",
+      "handler": "mentors-non-avaliablity.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

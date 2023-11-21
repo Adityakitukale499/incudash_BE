@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mentor_groomings",
+  "info": {
+    "name": "mentorGrooming",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "mentorInfo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "mentor-info.mentor-info"
+    },
+    "industry": {
+      "type": "string"
+    },
+    "maxBookingOfADay": {
+      "type": "string"
+    },
+    "price": {
+      "type": "string"
+    },
+    "isDisabled": {
+      "type": "boolean"
+    },
+    "isDeactivated": {
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "founder_bookings",
+  "info": {
+    "name": "founderBooking",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "founderId": {
+      "type": "string"
+    },
+    "dateOfBooking": {
+      "type": "string"
+    },
+    "isBookingCancelled": {
+      "type": "boolean"
+    },
+    "isBookingRescheduled": {
+      "type": "boolean"
+    },
+    "userId": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/mentor-groomings",
+      "handler": "mentor-grooming.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mentor-groomings/count",
+      "handler": "mentor-grooming.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mentor-groomings/:id",
+      "handler": "mentor-grooming.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mentor-groomings",
+      "handler": "mentor-grooming.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/mentor-groomings/:id",
+      "handler": "mentor-grooming.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/mentor-groomings/:id",
+      "handler": "mentor-grooming.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

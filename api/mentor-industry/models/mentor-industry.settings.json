@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mentor_industries",
+  "info": {
+    "name": "mentorIndustry",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "industryName": {
+      "type": "string"
+    },
+    "isActiveForAssignment": {
+      "type": "boolean"
+    },
+    "isDeactiavtedForBooking": {
+      "type": "boolean"
+    }
+  }
+}

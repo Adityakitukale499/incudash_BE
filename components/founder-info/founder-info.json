@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_founder_info_founder_infos",
+  "info": {
+    "name": "founderInfo",
+    "icon": "arrow-alt-circle-down"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "designation": {
+      "type": "string"
+    },
+    "companyName": {
+      "type": "string"
+    },
+    "imageRef": {
+      "type": "string"
+    }
+  }
+}

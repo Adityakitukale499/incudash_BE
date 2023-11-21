@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_mentors_non_avaliablity_mentors_non_avaliablities",
+  "info": {
+    "name": "mentorsNonAvaliablity",
+    "icon": "backspace"
+  },
+  "options": {},
+  "attributes": {
+    "mentorId": {
+      "type": "string"
+    },
+    "nonAvaliablityDates": {
+      "type": "component",
+      "repeatable": true,
+      "component": "non-avaliablity-dates.non-avaliablity-dates"
+    }
+  }
+}

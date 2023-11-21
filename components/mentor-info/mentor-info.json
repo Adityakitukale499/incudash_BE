@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_mentor_info_mentor_infos",
+  "info": {
+    "name": "mentorInfo",
+    "icon": "arrow-circle-right"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "designation": {
+      "type": "string"
+    },
+    "companyName": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "imageRef": {
+      "type": "string"
+    }
+  }
+}

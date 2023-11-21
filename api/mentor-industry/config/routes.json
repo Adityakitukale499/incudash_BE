@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/mentor-industries",
+      "handler": "mentor-industry.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mentor-industries/count",
+      "handler": "mentor-industry.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mentor-industries/:id",
+      "handler": "mentor-industry.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mentor-industries",
+      "handler": "mentor-industry.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/mentor-industries/:id",
+      "handler": "mentor-industry.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/mentor-industries/:id",
+      "handler": "mentor-industry.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

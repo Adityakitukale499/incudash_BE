@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_founder_grooming_founder_groomings",
+  "info": {
+    "name": "founderGrooming",
+    "icon": "arrow-circle-left"
+  },
+  "options": {},
+  "attributes": {
+    "founderInfo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "founder-info.founder-info"
+    },
+    "maxBookingInADay": {
+      "type": "string"
+    },
+    "price": {
+      "type": "string"
+    },
+    "isDisabled": {
+      "type": "boolean"
+    },
+    "isDeactivated": {
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "founder_grooming_non_avaliablities",
+  "info": {
+    "name": "founderGroomingNonAvaliablity",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "founderId": {
+      "type": "string"
+    },
+    "nonAvaliablityDates": {
+      "type": "component",
+      "repeatable": true,
+      "component": "non-avaliablity-dates.non-avaliablity-dates"
+    }
+  }
+}

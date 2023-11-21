@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mentor_bookings",
+  "info": {
+    "name": "mentorBooking",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "mentorId": {
+      "type": "string"
+    },
+    "dateOfBooking": {
+      "type": "string"
+    },
+    "isBookingCancelled": {
+      "type": "boolean"
+    },
+    "isBookingRescheduled": {
+      "type": "boolean"
+    },
+    "userId": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/mentor-bookings",
+      "handler": "mentor-booking.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mentor-bookings/count",
+      "handler": "mentor-booking.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mentor-bookings/:id",
+      "handler": "mentor-booking.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mentor-bookings",
+      "handler": "mentor-booking.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/mentor-bookings/:id",
+      "handler": "mentor-booking.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/mentor-bookings/:id",
+      "handler": "mentor-booking.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
