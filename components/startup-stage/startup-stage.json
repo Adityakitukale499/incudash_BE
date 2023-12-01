@@ -14,9 +14,7 @@
       "type": "string"
     },
     "comments": {
-      "type": "component",
-      "repeatable": true,
-      "component": "comments.comments"
+      "type": "json"
     }
   }
 }

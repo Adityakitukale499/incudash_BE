@@ -2,7 +2,8 @@
   "collectionName": "components_product_roadmap_product_roadmaps",
   "info": {
     "name": "productRoadmap",
-    "icon": "adjust"
+    "icon": "adjust",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -12,9 +13,7 @@
       "component": "road-map-collection.road-map-collection"
     },
     "comments": {
-      "type": "component",
-      "repeatable": true,
-      "component": "comments.comments"
+      "type": "json"
     }
   }
 }

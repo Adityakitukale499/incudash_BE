@@ -16,10 +16,11 @@
       "type": "component",
       "repeatable": false,
       "component": "startup-stage.startup-stage",
-      "required": true
+      "required": false
     },
     "userId": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "step": {
       "type": "string"

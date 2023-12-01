@@ -9,6 +9,16 @@
       "method": "PUT",
       "path": "/user/update/:id",
       "handler": "user.update"
+    },
+    {
+      "method": "PUT",
+      "path": "/user/resetPasswordToken",
+      "handler": "user.resetPasswordToken"
+    },
+    {
+      "method": "PUT",
+      "path": "/user/resetPassword",
+      "handler": "user.resetPassword"
     }
   ]
 }

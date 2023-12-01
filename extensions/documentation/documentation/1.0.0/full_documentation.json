@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "11/03/2023 6:25:49 PM"
+    "x-generation-date": "11/30/2023 4:58:06 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -6835,6 +6835,150 @@
         ]
       }
     },
+    "/user/resetPasswordToken": {
+      "put": {
+        "deprecated": false,
+        "description": "Update a record",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "User"
+        ],
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "foo": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "parameters": []
+      }
+    },
+    "/user/resetPassword": {
+      "put": {
+        "deprecated": false,
+        "description": "Update a record",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "User"
+        ],
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "foo": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "parameters": []
+      }
+    },
     "/email/": {
       "post": {
         "deprecated": false,
@@ -9291,7 +9435,7 @@
       "Idea": {
         "required": [
           "id",
-          "startupStage"
+          "userId"
         ],
         "properties": {
           "id": {
@@ -9313,27 +9457,7 @@
                 "type": "string"
               },
               "comments": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "required": [
-                    "id"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "created_at": {
-                      "type": "string"
-                    },
-                    "commentText": {
-                      "type": "string"
-                    },
-                    "createdBy": {
-                      "type": "string"
-                    }
-                  }
-                }
+                "type": "object"
               }
             }
           },
@@ -9393,27 +9517,7 @@
                 }
               },
               "comments": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "required": [
-                    "id"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "createAt": {
-                      "type": "string"
-                    },
-                    "commentText": {
-                      "type": "string"
-                    },
-                    "createdBy": {
-                      "type": "string"
-                    }
-                  }
-                }
+                "type": "object"
               }
             }
           },
@@ -9459,27 +9563,7 @@
                 }
               },
               "comments": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "required": [
-                    "id"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "created_at": {
-                      "type": "string"
-                    },
-                    "commentText": {
-                      "type": "string"
-                    },
-                    "createdBy": {
-                      "type": "string"
-                    }
-                  }
-                }
+                "type": "object"
               }
             }
           },
@@ -9516,27 +9600,7 @@
                 }
               },
               "comments": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "required": [
-                    "id"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "created_at": {
-                      "type": "string"
-                    },
-                    "commentText": {
-                      "type": "string"
-                    },
-                    "createdBy": {
-                      "type": "string"
-                    }
-                  }
-                }
+                "type": "object"
               }
             }
           },
@@ -9573,27 +9637,7 @@
                 }
               },
               "comments": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "required": [
-                    "id"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "created_at": {
-                      "type": "string"
-                    },
-                    "commentText": {
-                      "type": "string"
-                    },
-                    "createdBy": {
-                      "type": "string"
-                    }
-                  }
-                }
+                "type": "object"
               }
             }
           },
@@ -9634,7 +9678,7 @@
       },
       "NewIdea": {
         "required": [
-          "startupStage"
+          "userId"
         ],
         "properties": {
           "startupStage": {
@@ -9653,27 +9697,7 @@
                 "type": "string"
               },
               "comments": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "required": [
-                    "id"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "created_at": {
-                      "type": "string"
-                    },
-                    "commentText": {
-                      "type": "string"
-                    },
-                    "createdBy": {
-                      "type": "string"
-                    }
-                  }
-                }
+                "type": "object"
               }
             }
           },
@@ -9733,27 +9757,7 @@
                 }
               },
               "comments": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "required": [
-                    "id"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "createAt": {
-                      "type": "string"
-                    },
-                    "commentText": {
-                      "type": "string"
-                    },
-                    "createdBy": {
-                      "type": "string"
-                    }
-                  }
-                }
+                "type": "object"
               }
             }
           },
@@ -9799,27 +9803,7 @@
                 }
               },
               "comments": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "required": [
-                    "id"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "created_at": {
-                      "type": "string"
-                    },
-                    "commentText": {
-                      "type": "string"
-                    },
-                    "createdBy": {
-                      "type": "string"
-                    }
-                  }
-                }
+                "type": "object"
               }
             }
           },
@@ -9856,27 +9840,7 @@
                 }
               },
               "comments": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "required": [
-                    "id"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "created_at": {
-                      "type": "string"
-                    },
-                    "commentText": {
-                      "type": "string"
-                    },
-                    "createdBy": {
-                      "type": "string"
-                    }
-                  }
-                }
+                "type": "object"
               }
             }
           },
@@ -9913,27 +9877,7 @@
                 }
               },
               "comments": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "required": [
-                    "id"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "created_at": {
-                      "type": "string"
-                    },
-                    "commentText": {
-                      "type": "string"
-                    },
-                    "createdBy": {
-                      "type": "string"
-                    }
-                  }
-                }
+                "type": "object"
               }
             }
           },

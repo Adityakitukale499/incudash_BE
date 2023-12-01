@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_user_users",
+  "info": {
+    "name": "user",
+    "icon": "at"
+  },
+  "options": {},
+  "attributes": {
+    "userName": {
+      "type": "string"
+    },
+    "userId": {
+      "type": "string"
+    }
+  }
+}

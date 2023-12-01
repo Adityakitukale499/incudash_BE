@@ -668,7 +668,7 @@
       "Idea": {
         "required": [
           "id",
-          "startupStage"
+          "userId"
         ],
         "properties": {
           "id": {
@@ -690,27 +690,7 @@
                 "type": "string"
               },
               "comments": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "required": [
-                    "id"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "created_at": {
-                      "type": "string"
-                    },
-                    "commentText": {
-                      "type": "string"
-                    },
-                    "createdBy": {
-                      "type": "string"
-                    }
-                  }
-                }
+                "type": "object"
               }
             }
           },
@@ -770,27 +750,7 @@
                 }
               },
               "comments": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "required": [
-                    "id"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "createAt": {
-                      "type": "string"
-                    },
-                    "commentText": {
-                      "type": "string"
-                    },
-                    "createdBy": {
-                      "type": "string"
-                    }
-                  }
-                }
+                "type": "object"
               }
             }
           },
@@ -836,27 +796,7 @@
                 }
               },
               "comments": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "required": [
-                    "id"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "created_at": {
-                      "type": "string"
-                    },
-                    "commentText": {
-                      "type": "string"
-                    },
-                    "createdBy": {
-                      "type": "string"
-                    }
-                  }
-                }
+                "type": "object"
               }
             }
           },
@@ -893,27 +833,7 @@
                 }
               },
               "comments": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "required": [
-                    "id"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "created_at": {
-                      "type": "string"
-                    },
-                    "commentText": {
-                      "type": "string"
-                    },
-                    "createdBy": {
-                      "type": "string"
-                    }
-                  }
-                }
+                "type": "object"
               }
             }
           },
@@ -950,27 +870,7 @@
                 }
               },
               "comments": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "required": [
-                    "id"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "created_at": {
-                      "type": "string"
-                    },
-                    "commentText": {
-                      "type": "string"
-                    },
-                    "createdBy": {
-                      "type": "string"
-                    }
-                  }
-                }
+                "type": "object"
               }
             }
           },
@@ -1011,7 +911,7 @@
       },
       "NewIdea": {
         "required": [
-          "startupStage"
+          "userId"
         ],
         "properties": {
           "startupStage": {
@@ -1030,27 +930,7 @@
                 "type": "string"
               },
               "comments": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "required": [
-                    "id"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "created_at": {
-                      "type": "string"
-                    },
-                    "commentText": {
-                      "type": "string"
-                    },
-                    "createdBy": {
-                      "type": "string"
-                    }
-                  }
-                }
+                "type": "object"
               }
             }
           },
@@ -1110,27 +990,7 @@
                 }
               },
               "comments": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "required": [
-                    "id"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "createAt": {
-                      "type": "string"
-                    },
-                    "commentText": {
-                      "type": "string"
-                    },
-                    "createdBy": {
-                      "type": "string"
-                    }
-                  }
-                }
+                "type": "object"
               }
             }
           },
@@ -1176,27 +1036,7 @@
                 }
               },
               "comments": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "required": [
-                    "id"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "created_at": {
-                      "type": "string"
-                    },
-                    "commentText": {
-                      "type": "string"
-                    },
-                    "createdBy": {
-                      "type": "string"
-                    }
-                  }
-                }
+                "type": "object"
               }
             }
           },
@@ -1233,27 +1073,7 @@
                 }
               },
               "comments": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "required": [
-                    "id"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "created_at": {
-                      "type": "string"
-                    },
-                    "commentText": {
-                      "type": "string"
-                    },
-                    "createdBy": {
-                      "type": "string"
-                    }
-                  }
-                }
+                "type": "object"
               }
             }
           },
@@ -1290,27 +1110,7 @@
                 }
               },
               "comments": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "required": [
-                    "id"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "created_at": {
-                      "type": "string"
-                    },
-                    "commentText": {
-                      "type": "string"
-                    },
-                    "createdBy": {
-                      "type": "string"
-                    }
-                  }
-                }
+                "type": "object"
               }
             }
           },

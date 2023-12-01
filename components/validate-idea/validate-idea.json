@@ -21,9 +21,7 @@
       "component": "custom.attachments"
     },
     "comments": {
-      "type": "component",
-      "repeatable": true,
-      "component": "custom.comments"
+      "type": "json"
     }
   }
 }
