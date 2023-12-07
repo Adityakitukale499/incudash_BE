@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "11/30/2023 4:58:06 PM"
+    "x-generation-date": "12/08/2023 12:14:29 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -10051,31 +10051,28 @@
             "type": "string"
           },
           "mentorInfo": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "designation": {
-                  "type": "string"
-                },
-                "companyName": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
-                "imageRef": {
-                  "type": "string"
-                }
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "designation": {
+                "type": "string"
+              },
+              "companyName": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "imageRef": {
+                "type": "string"
               }
             }
           },
@@ -10103,31 +10100,28 @@
       "NewMentor-grooming": {
         "properties": {
           "mentorInfo": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "designation": {
-                  "type": "string"
-                },
-                "companyName": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
-                "imageRef": {
-                  "type": "string"
-                }
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "designation": {
+                "type": "string"
+              },
+              "companyName": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "imageRef": {
+                "type": "string"
               }
             }
           },

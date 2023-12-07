@@ -536,31 +536,28 @@
             "type": "string"
           },
           "mentorInfo": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "designation": {
-                  "type": "string"
-                },
-                "companyName": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
-                "imageRef": {
-                  "type": "string"
-                }
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "designation": {
+                "type": "string"
+              },
+              "companyName": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "imageRef": {
+                "type": "string"
               }
             }
           },
@@ -588,31 +585,28 @@
       "NewMentor-grooming": {
         "properties": {
           "mentorInfo": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "designation": {
-                  "type": "string"
-                },
-                "companyName": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
-                "imageRef": {
-                  "type": "string"
-                }
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "designation": {
+                "type": "string"
+              },
+              "companyName": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "imageRef": {
+                "type": "string"
               }
             }
           },

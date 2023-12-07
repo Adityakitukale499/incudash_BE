@@ -14,7 +14,7 @@
   "attributes": {
     "mentorInfo": {
       "type": "component",
-      "repeatable": true,
+      "repeatable": false,
       "component": "mentor-info.mentor-info"
     },
     "industry": {
