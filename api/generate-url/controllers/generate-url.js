@@ -4,8 +4,9 @@ const { s3Client } = require('../../../config/s3Config');
 
 module.exports = {
   async generateDownloadUrl(ctx) {
-    const {fileName} = ctx.body
-    console.log(fileName);
+    const {fileName} = ctx.request.body
+    console.log(ctx.request.body, 'ctx');
+  
     try {
       console.log('try');
       const bucketParams = {

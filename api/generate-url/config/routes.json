@@ -57,7 +57,7 @@
       }
     },
     {
-      "method": "post",
+      "method": "POST",
       "path": "/generate-urls/generate-download-url",
       "handler": "generate-url.generateDownloadUrl",
       "config": {
