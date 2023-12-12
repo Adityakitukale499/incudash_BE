@@ -10,6 +10,8 @@
     "strapi": "strapi"
   },
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.470.0",
+    "@aws-sdk/s3-request-presigner": "^3.470.0",
     "bcrypt": "^5.1.1",
     "nodemailer": "^6.9.7",
     "strapi": "3.6.8",

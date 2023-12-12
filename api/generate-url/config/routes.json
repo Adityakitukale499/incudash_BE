@@ -1,0 +1,69 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/generate-urls",
+      "handler": "generate-url.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/generate-urls/count",
+      "handler": "generate-url.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/generate-urls/:id",
+      "handler": "generate-url.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/generate-urls",
+      "handler": "generate-url.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/generate-urls/:id",
+      "handler": "generate-url.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/generate-urls/:id",
+      "handler": "generate-url.delete",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/generate-urls/generate-upload-url",
+      "handler": "generate-url.generateUploadUrl",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "post",
+      "path": "/generate-urls/generate-download-url",
+      "handler": "generate-url.generateDownloadUrl",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
+

@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/ideas": {
+    "/generate-urls": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -10,9 +10,10 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Idea"
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
                   }
                 }
               }
@@ -51,7 +52,7 @@
         },
         "summary": "",
         "tags": [
-          "Idea"
+          "Generate-url"
         ],
         "parameters": [
           {
@@ -201,72 +202,9 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Idea"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Idea"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewIdea"
-              }
-            }
-          }
-        }
-      }
-    },
-    "/ideas/count": {
-      "get": {
-        "deprecated": false,
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
                   "properties": {
-                    "count": {
-                      "type": "integer"
+                    "foo": {
+                      "type": "string"
                     }
                   }
                 }
@@ -306,12 +244,22 @@
         },
         "summary": "",
         "tags": [
-          "Idea"
+          "Generate-url"
         ],
-        "parameters": []
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewGenerate-url"
+              }
+            }
+          }
+        }
       }
     },
-    "/ideas/{id}": {
+    "/generate-urls/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -321,7 +269,11 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Idea"
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
                 }
               }
             }
@@ -359,7 +311,64 @@
         },
         "summary": "",
         "tags": [
-          "Idea"
+          "Generate-url"
+        ],
+        "parameters": []
+      }
+    },
+    "/generate-urls/{id}": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Generate-url"
         ],
         "parameters": [
           {
@@ -383,7 +392,11 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Idea"
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
                 }
               }
             }
@@ -421,7 +434,7 @@
         },
         "summary": "",
         "tags": [
-          "Idea"
+          "Generate-url"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +442,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewIdea"
+                "$ref": "#/components/schemas/NewGenerate-url"
               }
             }
           }
@@ -495,7 +508,7 @@
         },
         "summary": "",
         "tags": [
-          "Idea"
+          "Generate-url"
         ],
         "parameters": [
           {
@@ -511,10 +524,10 @@
         ]
       }
     },
-    "/ideas/findByUserId/{userId}": {
-      "get": {
+    "/generate-urls/generate-upload-url": {
+      "post": {
         "deprecated": false,
-        "description": "",
+        "description": "Create a new record",
         "responses": {
           "200": {
             "description": "response",
@@ -563,75 +576,7 @@
         },
         "summary": "",
         "tags": [
-          "Idea"
-        ],
-        "parameters": [
-          {
-            "name": "userId",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      }
-    },
-    "/ideas/updateByUserId/{userId}": {
-      "put": {
-        "deprecated": false,
-        "description": "Update a record",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Idea"
+          "Generate-url"
         ],
         "requestBody": {
           "description": "",
@@ -647,264 +592,99 @@
               }
             }
           }
-        },
-        "parameters": [
-          {
-            "name": "userId",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
+        }
+      }
+    },
+    "/generate-urls/generate-download-url": {
+      "post": {
+        "deprecated": false,
+        "description": "Create a new record",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
             }
           }
-        ]
+        },
+        "summary": "",
+        "tags": [
+          "Generate-url"
+        ],
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "foo": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
   },
   "components": {
     "schemas": {
-      "Idea": {
+      "Generate-url": {
         "required": [
-          "id",
-          "userId"
+          "id"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "startupStage": {
-            "type": "object",
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "stage": {
-                "type": "string"
-              },
-              "industry": {
-                "type": "string"
-              },
-              "comments": {
-                "type": "object"
-              }
-            }
-          },
-          "userId": {
+          "name": {
             "type": "string"
           },
-          "step": {
+          "type": {
             "type": "string"
           },
-          "validateIdea": {
-            "type": "object",
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "ideaText": {
-                "type": "string"
-              },
-              "refrenceLinkArray": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "required": [
-                    "id"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "refrerenceLink": {
-                      "type": "string"
-                    }
-                  }
-                }
-              },
-              "attachments": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "required": [
-                    "id"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "type": {
-                      "type": "string"
-                    },
-                    "url": {
-                      "type": "string"
-                    },
-                    "fileName": {
-                      "type": "string"
-                    }
-                  }
-                }
-              },
-              "comments": {
-                "type": "object"
-              }
-            }
-          },
-          "productRoadmap": {
-            "type": "object",
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "roadMapCollection": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "required": [
-                    "id"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "timestampFrom": {
-                      "type": "string"
-                    },
-                    "timestampTo": {
-                      "type": "string"
-                    },
-                    "description": {
-                      "type": "string"
-                    },
-                    "updated_at": {
-                      "type": "string"
-                    },
-                    "created_at": {
-                      "type": "string"
-                    },
-                    "roadmapTitle": {
-                      "type": "string"
-                    }
-                  }
-                }
-              },
-              "comments": {
-                "type": "object"
-              }
-            }
-          },
-          "financialValuation": {
-            "type": "object",
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "documentCollection": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "required": [
-                    "id"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "documentId": {
-                      "type": "string"
-                    },
-                    "fileName": {
-                      "type": "string"
-                    },
-                    "type": {
-                      "type": "string"
-                    }
-                  }
-                }
-              },
-              "comments": {
-                "type": "object"
-              }
-            }
-          },
-          "pitchDeckValidation": {
-            "type": "object",
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "documentCollection": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "required": [
-                    "id"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "documentId": {
-                      "type": "string"
-                    },
-                    "fileName": {
-                      "type": "string"
-                    },
-                    "type": {
-                      "type": "string"
-                    }
-                  }
-                }
-              },
-              "comments": {
-                "type": "object"
-              }
-            }
-          },
-          "raiseFunding": {
-            "type": "object",
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "fundingFormattedText": {
-                "type": "string"
-              },
-              "created_at": {
-                "type": "string"
-              },
-              "updated_at": {
-                "type": "string"
-              },
-              "createdBy": {
-                "type": "string"
-              },
-              "lastUpdatedBy": {
-                "type": "string"
-              }
-            }
-          },
-          "stepNum": {
-            "type": "integer"
+          "url": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -912,242 +692,16 @@
           }
         }
       },
-      "NewIdea": {
-        "required": [
-          "userId"
-        ],
+      "NewGenerate-url": {
         "properties": {
-          "startupStage": {
-            "type": "object",
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "stage": {
-                "type": "string"
-              },
-              "industry": {
-                "type": "string"
-              },
-              "comments": {
-                "type": "object"
-              }
-            }
-          },
-          "userId": {
+          "name": {
             "type": "string"
           },
-          "step": {
+          "type": {
             "type": "string"
           },
-          "validateIdea": {
-            "type": "object",
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "ideaText": {
-                "type": "string"
-              },
-              "refrenceLinkArray": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "required": [
-                    "id"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "refrerenceLink": {
-                      "type": "string"
-                    }
-                  }
-                }
-              },
-              "attachments": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "required": [
-                    "id"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "type": {
-                      "type": "string"
-                    },
-                    "url": {
-                      "type": "string"
-                    },
-                    "fileName": {
-                      "type": "string"
-                    }
-                  }
-                }
-              },
-              "comments": {
-                "type": "object"
-              }
-            }
-          },
-          "productRoadmap": {
-            "type": "object",
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "roadMapCollection": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "required": [
-                    "id"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "timestampFrom": {
-                      "type": "string"
-                    },
-                    "timestampTo": {
-                      "type": "string"
-                    },
-                    "description": {
-                      "type": "string"
-                    },
-                    "updated_at": {
-                      "type": "string"
-                    },
-                    "created_at": {
-                      "type": "string"
-                    },
-                    "roadmapTitle": {
-                      "type": "string"
-                    }
-                  }
-                }
-              },
-              "comments": {
-                "type": "object"
-              }
-            }
-          },
-          "financialValuation": {
-            "type": "object",
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "documentCollection": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "required": [
-                    "id"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "documentId": {
-                      "type": "string"
-                    },
-                    "fileName": {
-                      "type": "string"
-                    },
-                    "type": {
-                      "type": "string"
-                    }
-                  }
-                }
-              },
-              "comments": {
-                "type": "object"
-              }
-            }
-          },
-          "pitchDeckValidation": {
-            "type": "object",
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "documentCollection": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "required": [
-                    "id"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "documentId": {
-                      "type": "string"
-                    },
-                    "fileName": {
-                      "type": "string"
-                    },
-                    "type": {
-                      "type": "string"
-                    }
-                  }
-                }
-              },
-              "comments": {
-                "type": "object"
-              }
-            }
-          },
-          "raiseFunding": {
-            "type": "object",
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "fundingFormattedText": {
-                "type": "string"
-              },
-              "created_at": {
-                "type": "string"
-              },
-              "updated_at": {
-                "type": "string"
-              },
-              "createdBy": {
-                "type": "string"
-              },
-              "lastUpdatedBy": {
-                "type": "string"
-              }
-            }
-          },
-          "stepNum": {
-            "type": "integer"
+          "url": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -1163,9 +717,5 @@
       }
     }
   },
-  "tags": [
-    {
-      "name": "Idea"
-    }
-  ]
+  "tags": []
 }

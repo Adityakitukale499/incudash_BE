@@ -2,17 +2,18 @@
   "collectionName": "components_custom_document_collections",
   "info": {
     "name": "documentCollection",
-    "icon": "american-sign-language-interpreting"
+    "icon": "american-sign-language-interpreting",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "documentId": {
       "type": "string"
     },
-    "url": {
+    "fileName": {
       "type": "string"
     },
-    "createdBy": {
+    "type": {
       "type": "string"
     }
   }

@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "generate_urls",
+  "info": {
+    "name": "generateUrl"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}

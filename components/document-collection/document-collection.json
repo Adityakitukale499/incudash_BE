@@ -2,17 +2,18 @@
   "collectionName": "components_document_collection_document_collections",
   "info": {
     "name": "documentCollection",
-    "icon": "anchor"
+    "icon": "anchor",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "documentId": {
       "type": "string"
     },
-    "url": {
+    "fileName": {
       "type": "string"
     },
-    "created_at": {
+    "type": {
       "type": "string"
     }
   }
