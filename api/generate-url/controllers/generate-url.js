@@ -4,14 +4,14 @@ const { s3Client } = require('../../../config/s3Config');
 
 module.exports = {
   async generateDownloadUrl(ctx) {
-    const {fileName} = ctx.request.body
+    const { fileName } = ctx.request.body
     console.log(ctx.request.body, 'ctx');
-  
+
     try {
       console.log('try');
       const bucketParams = {
         Bucket: 'incudash',
-        Key: fileName, 
+        Key: fileName,
         // ContentType:'',
       };
 
@@ -31,26 +31,25 @@ module.exports = {
 
   async generateUploadUrl(ctx) {
     try {
-      console.log("start")
+      const { name, type } = ctx.request.body;
+      console.log(name, type);
       const bucketParams = {
         Bucket: 'incudash',
-        Key: 'file.text', 
-        ContentType: 'text',
+        Key: name,
+        ContentType: type,
       };
-        console.log("start1");
+
       const url = await getSignedUrl(
         s3Client,
         new PutObjectCommand(bucketParams),
-        { expiresIn: 900 } // 15 minutes expiration
+        { expiresIn: 900 }
       );
-      console.log("start1");
 
       ctx.send({ url });
-      console.log(url);
     } catch (error) {
       console.error('Error generating upload URL:', error);
       ctx.status = 500;
       ctx.send({ error: 'Internal Server Error' });
     }
-  },
+  }
 };
