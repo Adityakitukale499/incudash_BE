@@ -7,13 +7,13 @@ module.exports = ({ env }) => ({
         host: env('SMTP_HOST', 'smtp.gmail.com'),
         port: env('SMTP_PORT', 587),
         auth: {
-          user: env('SMTP_USERNAME', 'testmailnode63@gmail.com'),
-          pass: env('SMTP_PASSWORD', 'zfry jjhg yvmc umnz'),
+          user: env('SMTP_USERNAME', 'kitukalea2@gmail.com'),
+          pass: env('SMTP_PASSWORD', 'incudash'),
         },
       },
       settings: {
-        defaultFrom: 'testmailnode63@gmail.com',
-        defaultReplyTo: 'testmailnode63@gmail.com',
+        defaultFrom: 'kitukalea2@gmail.com',
+        defaultReplyTo: 'kitukalea2@gmail.com',
       },
     },
   });
